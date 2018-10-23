@@ -81,12 +81,12 @@ function writeToFile(peers) {
       console.log()
     });
   }
-//   cmd.get(
-//     'nginx -s reload',
-//     function(err, data, stderr){
-//         console.log('Nginx:\n\n',stderr);
-//     }
-// );
+  cmd.get(
+    'nginx -s reload',
+    function(err, data, stderr){
+        console.log('Nginx:\n\n',stderr);
+    }
+);
 }
 
 
