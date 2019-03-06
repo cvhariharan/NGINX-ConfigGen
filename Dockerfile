@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
 #configure nginx
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY serv.conf /etc/nginx/nginx.conf
 # ADD default /etc/nginx/sites-available/default
 # COPY serv.conf /etc/nginx/sites-available/
 # RUN cat /etc/nginx/sites-available/default
