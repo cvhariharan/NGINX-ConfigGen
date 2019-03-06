@@ -1,0 +1,3 @@
+server {
+    include sites-available/serv.conf;
+}
