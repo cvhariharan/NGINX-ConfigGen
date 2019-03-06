@@ -1,3 +1,14 @@
-server {
-    include sites-available/serv.conf;
+http {
+    upstream myapp1 {
+        server cvhariharan.me;
+        server instructables.com;
+    }
+
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://myapp1;
+        }
+    }
 }
